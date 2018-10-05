@@ -14,8 +14,10 @@
     </head>
     <body>
         <c:forEach items="${archivos}" var="archivo">
-            <h1>Nombre : ${archivo.key} </h1><br/>
+            <h3><b>Nombre</b> : ${archivo.key} </h3><br/>
+            <div style="border:1px">
             <c:out escapeXml="false" value="${archivo.value}"/>
+            </div>
         </c:forEach>
     </body>
 </html>
